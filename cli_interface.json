@@ -1,0 +1,43 @@
+{
+  "project": "tessera-bench",
+  "manifest_version": "1",
+  "tools": [
+    {
+      "name": "tessera-run",
+      "description": "Run a robustness suite end to end.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "suite": {
+            "type": "string",
+            "description": "Suite definition to execute."
+          },
+          "seed": {
+            "type": "integer",
+            "description": "Random seed for the run."
+          }
+        },
+        "required": [
+          "suite"
+        ]
+      }
+    },
+    {
+      "name": "tessera-report",
+      "description": "Render a report for a completed suite run.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "format": {
+            "type": "string",
+            "description": "Output format, e.g. json or html."
+          },
+          "verbose": {
+            "type": "boolean",
+            "description": "Include per-dataset detail."
+          }
+        }
+      }
+    }
+  ]
+}

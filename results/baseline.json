@@ -1,0 +1,5 @@
+{
+  "adult": {"robust_accuracy": 0.842},
+  "covertype": {"robust_accuracy": 0.768},
+  "higgs": {"robust_accuracy": 0.711}
+}
