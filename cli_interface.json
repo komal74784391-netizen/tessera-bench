@@ -38,6 +38,14 @@
           }
         }
       }
+    },
+    {
+      "name": "tessera-list",
+      "description": "List the suites available in the harness.",
+      "parameters": {
+        "type": "object",
+        "properties": {}
+      }
     }
   ]
 }
